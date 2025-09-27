@@ -47,9 +47,10 @@ class Target extends Model
     {
         return $this->belongsTo(JenisKayu::class, 'id_jenis_kayu', 'id_jenis_kayu');
     }
-    public function produksiRotaries()
+    public function produksiRotariesLahans()
     {
-        return $this->hasMany(ProduksiRotary::class, 'id_target', 'id_target');
+        return $this->hasMany(ProduksiRotaryLahan::class, 'id_target', 'id_target');
     }
+
 
 }

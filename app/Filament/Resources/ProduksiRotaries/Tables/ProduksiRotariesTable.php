@@ -18,18 +18,13 @@ class ProduksiRotariesTable
                 TextColumn::make('tanggal_produksi')
                     ->date()
                     ->sortable(),
-                TextColumn::make('id_target')
-                    ->numeric()
-                    ->sortable(),
                 TextColumn::make('jam_mulai_mesin')
                     ->time()
                     ->sortable(),
                 TextColumn::make('jam_selesai_mesin')
                     ->time()
                     ->sortable(),
-                TextColumn::make('status_produksi')
-                    ->numeric()
-                    ->sortable(),
+
                 TextColumn::make('status_data')
                     ->numeric()
                     ->sortable(),

@@ -15,7 +15,6 @@ return new class extends Migration {
             $table->date('tanggal_produksi');
             $table->time('jam_mulai_mesin')->nullable();
             $table->time('jam_selesai_mesin')->nullable();
-            $table->integer('status_produksi')->default(0);
             $table->text('kendala')->nullable();
             $table->integer('status_data')->default(0);
             $table->timestamps();

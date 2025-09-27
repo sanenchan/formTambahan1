@@ -31,8 +31,10 @@ class Pegawai extends Model
         'tanggal_masuk' => 'date',
     ];
 
-    public function detailProduksiRotaries()
+
+    public function pegawai()
     {
-        return $this->hasMany(DetailProduksiRotary::class, 'id_pegawai', 'id');
+        return $this->hasMany(Target::class, 'id_pegawai', 'id_pegawai');
     }
+
 }

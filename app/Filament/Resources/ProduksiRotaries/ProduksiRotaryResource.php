@@ -18,11 +18,7 @@ use Filament\Tables\Table;
 
 class ProduksiRotaryResource extends Resource
 {
-    public static function mutateFormDataBeforeCreate(array $data): array
-    {
-        dd($data); // <<< disini, semua input dari form (parent + repeater anak) akan muncul
-        return $data;
-    }
+
     protected static ?string $model = ProduksiRotary::class;
 
     protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;

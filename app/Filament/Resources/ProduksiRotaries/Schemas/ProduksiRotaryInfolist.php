@@ -13,16 +13,14 @@ class ProduksiRotaryInfolist
             ->components([
                 TextEntry::make('tanggal_produksi')
                     ->date(),
-                TextEntry::make('id_target')
-                    ->numeric(),
+
                 TextEntry::make('jam_mulai_mesin')
                     ->time()
                     ->placeholder('-'),
                 TextEntry::make('jam_selesai_mesin')
                     ->time()
                     ->placeholder('-'),
-                TextEntry::make('status_produksi')
-                    ->numeric(),
+
                 TextEntry::make('kendala')
                     ->placeholder('-')
                     ->columnSpanFull(),

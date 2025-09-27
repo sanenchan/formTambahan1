@@ -34,11 +34,13 @@ return new class extends Migration {
             $table->integer('hasilkw3')->default(0);
             $table->integer('hasilkw4')->default(0);
             //kolom total menjumlahkan otomatis via database hasilkw1 + hasilkw2 + hasilkw3 + hasilkw4
-            $table->integer('total')->storedAs('hasilkw1 + hasilkw2 + hasilkw3 + hasilkw4');
+            $table->integer('total')->default(0);
 
 
             $table->integer('target_produksi')->default(0);
             $table->integer('capaian_produksi')->default(0);
+
+            $table->integer('status_produksi')->default(0);
             $table->integer('potongan_target')->default(0);
             $table->timestamps();
             // Foreign key ke tabel targets
